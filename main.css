@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css');
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #1e1331 !important;
+}
+
+/* *{
+    color: pink !important; Her şeyin rengini değiştirmek için kullanabilirim :re1ss_idk:
+} */
+
+.mainT {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: Teko;
+    font-size: 3rem;
+    color: #8f49da;
+    text-align: center;
+    text-shadow: 0px 0px 30px #9900ff;
+}
+.mainT2 {
+    display: flex;
+    justify-content: center;
+    /* padding-top: 5%; */
+    font-family: Teko;
+    font-size: 2.5rem;
+    color: #8f49da;
+    text-align: center;
+    text-shadow: 0px 0px 30px #9900ff;
+}
+
+.index{
+    display: flex;
+    justify-content: center;
+    font-family: Outfit;
+    font-size: 1.3rem;
+    color: #6d1bb1;
+    text-align: center;
+    text-shadow: 0px 0px 30px #9900ff;
+}
+
+.whoami{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Outfit;
+    font-size: 0.8rem;
+    color: #6d1bb1;
+    text-align: center;
+    text-shadow: 0px 0px 30px #9900ff;
+}
+
+.info1, .info2, .info3, .info4 {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    font-family: Outfit;
+    color: #6d1bb1;
+    text-shadow: 0px 0px 30px #9900ff;
+    margin: 7px; 
+}
+
+.history{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Outfit;
+    font-size: 0.8rem;
+    color: #6d1bb1;
+    text-align: center;
+    text-shadow: 0px 0px 30px #9900ff;
+}
+
+.historyinfo1, .historyinfo2, .historyinfo3, .historyinfo4, .historyinfo5, .historyinfo6, .historyinfo7{
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Outfit;
+    color: #6d1bb1;
+    text-shadow: 0px 0px 30px #9900ff;
+    margin: 7px; 
+    font-size: 1.1rem;
+}
+
+.buttonBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.buttons2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.button, .button2, .button3, .button4, .button5, .button6 {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background-color: #270d44;
+    padding: 8px;
+    text-align: center;
+    font-family: Outfit;
+    color: #601baa;
+    /* text-shadow: 0px 0px 8px #7718cf; */
+    /* box-shadow: 0px 3px 5px #472172, 0px 3px 5px #472172; */
+    display: inline-block;
+    cursor: pointer;
+    margin: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background-color: #270d44;
+    padding: 8px;
+    text-align: center;
+    font-family: Outfit;
+    color: #601baa;
+    text-shadow: 0px 0px 8px #7718cf;
+    box-shadow: 0px 3px 5px #472172, 0px 3px 5px #472172;
+    display: inline-block;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.buttons a i {
+    color: #6216b9;
+    text-shadow: none;
+}
