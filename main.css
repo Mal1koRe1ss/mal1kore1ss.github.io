@@ -152,6 +152,7 @@ body{
 .buttons a i {
     color: #6216b9;
     text-shadow: none;
+    padding: 1px;
 }
   
 .Selector {
