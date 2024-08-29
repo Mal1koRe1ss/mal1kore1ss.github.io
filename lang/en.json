@@ -1,10 +1,14 @@
 {
+    "enx": "English",
+    "trx": "Turkish",
+
     "mainT": "Hi I'm Mal1koRe1ss",
     "mainT2": "My History",
     "index": "I play video games for fun. Personal info and Contact is below.",
 
     "pinfobutton": "Press me for Personal Info.",
     "contactbutton": "Press me for Contact.",
+    "mainbutton": "Press me for Main Page.",
 
     "info1": "My name is Muhammed.",
     "info2": "I'm 17 y.o (years old).",

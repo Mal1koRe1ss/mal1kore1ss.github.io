@@ -8,8 +8,12 @@
 <script src="lang.js"></script>
 </head>
 <body>
-    <div class="mainT">Hi I'm Mal1koRe1ss</div>
-    <h1 class="index">I play video games for fun. You can see my Personal Info below.</h1>
+    <select id="languageSelect" class="LanguageSelect">
+        <option value="en" data-lang="enx">English</option>
+        <option value="tr" data-lang="trx">Türkçe</option>
+      </select>
+    <div class="mainT" data-lang="mainT">Hi I'm Mal1koRe1ss</div>
+    <h1 class="index" data-lang="index">I play video games for fun. You can see my Personal Info below.</h1>
     <div class="buttons">
         <a href="https://discord.gg/9Kyv9dDW6u" class="button"><i class="ri-discord-fill"></i> Discord</a>
         <a href="https://discord.gg/trycatch" class="button2"><i class="ri-discord-fill"></i>TryCatch</a>
@@ -19,8 +23,8 @@
         <a href="https://www.instagram.com/" class="button6"><i class="ri-instagram-fill"></i>Instagram</a>
     </div>
     <div class="buttons2">
-        <a href="aboutme.html" class="button"><i class="ri-global-line"></i>Press me for Personal Info.</a>
-        <a href="index.html" class="button"><i class="ri-global-line"></i>Press me for Main Page.</a>
+        <a href="aboutme.html" class="button" data-lang="pinfobutton"><i class="ri-global-line"></i>Press me for Personal Info.</a>
+        <a href="index.html" class="button" data-lang="mainbutton"><i class="ri-global-line"></i>Press me for Main Page.</a>
     </div>
 </body> 
 </html>

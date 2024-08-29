@@ -1,10 +1,14 @@
 {
+    "enx": "İngilizce",
+    "trx": "Türkçe",
+
     "mainT": "Merhaba, ben Mal1koRe1ss",
     "mainT2": "Geçmişim",
     "index": "Eğlenmek için video oyunları oynarım. Kişisel bilgilerim ve İletişim bilgilerim aşağıdadır.",
 
     "pinfobutton": "Kişisel Bilgilerim için bana tıkla.",
     "contactbutton": "İletişim için bana tıkla.",
+    "mainbutton": "Ana sayfa için bana tıkla.",
 
     "info1": "Adım Muhammed.",
     "info2": "17 yaşındayım.",
