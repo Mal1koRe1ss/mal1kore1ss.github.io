@@ -13,3 +13,5 @@ I made the website based on Purple and Pink colors because i love them
 Dark-Light Mode (Maybe)
 
 Language Button Fix
+
+Responsive Build
