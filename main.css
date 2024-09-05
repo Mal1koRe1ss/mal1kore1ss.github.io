@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css');
+
+:root {
+    color-scheme: light dark;
+}
+
+
 a{
     text-decoration: none;
 }
@@ -29,7 +35,7 @@ body{
     /* padding-top: 5%; */
     font-family: Teko;
     font-size: 2.5rem;
-    color: #8f49da;
+    color: light-dark(#8f39eb,#8f49da);
     text-align: center;
     text-shadow: 0px 0px 30px #9900ff;
 }
@@ -39,7 +45,7 @@ body{
     justify-content: center;
     font-family: Outfit;
     font-size: 1.3rem;
-    color: #6d1bb1;
+    color: light-dark(#7c14d1,#6d1bb1);
     text-align: center;
     text-shadow: 0px 0px 30px #9900ff;
 }
@@ -50,7 +56,7 @@ body{
     justify-content: center;
     font-family: Outfit;
     font-size: 0.8rem;
-    color: #6d1bb1;
+    color: light-dark(#7c14d1,#6d1bb1);
     text-align: center;
     text-shadow: 0px 0px 30px #9900ff;
 }
@@ -61,7 +67,7 @@ body{
     padding: 8px;
     text-align: center;
     font-family: Outfit;
-    color: #6d1bb1;
+    color: light-dark(#7c14d1,#6d1bb1);
     text-shadow: 0px 0px 30px #9900ff;
     margin: 7px; 
 }
@@ -73,7 +79,7 @@ body{
     justify-content: center;
     font-family: Outfit;
     font-size: 0.8rem;
-    color: #6d1bb1;
+    color: light-dark(#7c14d1,#6d1bb1);
     text-align: center;
     text-shadow: 0px 0px 30px #9900ff;
 }
@@ -84,7 +90,7 @@ body{
     justify-content: center;
     text-align: center;
     font-family: Outfit;
-    color: #6d1bb1;
+    color: light-dark(#7c14d1,#6d1bb1);
     text-shadow: 0px 0px 30px #9900ff;
     margin: 7px; 
     font-size: 1.1rem;
@@ -123,7 +129,7 @@ body{
     padding: 8px;
     text-align: center;
     font-family: Outfit;
-    color: #601baa;
+    color: light-dark(#6d19c7,#601baa);
     /* text-shadow: 0px 0px 8px #7718cf; */
     /* box-shadow: 0px 3px 5px #472172, 0px 3px 5px #472172; */
     display: inline-block;
@@ -141,7 +147,7 @@ body{
     padding: 8px;
     text-align: center;
     font-family: Outfit;
-    color: #601baa;
+    color: light-dark(#6d19c7,#601baa);
     text-shadow: 0px 0px 8px #7718cf;
     box-shadow: 0px 0px 5px #472172, 0px 0px 5px #472172;
     display: inline-block;
@@ -150,7 +156,7 @@ body{
 }
 
 .buttons a i {
-    color: #6216b9;
+    color: light-dark(#6b16cc,#6216b9) ;
     text-shadow: none;
     padding: 1px;
 }
@@ -173,7 +179,7 @@ body{
     padding: 8px;
     text-align: center;
     font-family: Outfit;
-    color: #601baa;
+    color: light-dark(#6d19c7,#601baa);
     display: inline-block;
     cursor: pointer;
     margin: 7px;
@@ -201,7 +207,10 @@ body{
 }
 
 
+.light {
+    color-scheme: light;
+}
 
-
-
-
+.dark {
+    color-scheme: dark;
+}
