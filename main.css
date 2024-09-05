@@ -19,6 +19,9 @@ body{
     color: pink !important; Her şeyin rengini değiştirmek için kullanabilirim :re1ss_idk:
 } */
 
+* {
+    flex-wrap: wrap;
+}
 .mainT {
     display: flex;
     justify-content: center;
