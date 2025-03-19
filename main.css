@@ -87,7 +87,7 @@ body{
     text-shadow: 0px 0px 30px #9900ff;
 }
 
-.historyinfo1, .historyinfo2, .historyinfo3, .historyinfo4, .historyinfo5, .historyinfo6, .historyinfo7{
+.historyinfo1, .historyinfo2, .historyinfo3, .historyinfo4, .historyinfo5, .historyinfo6, .historyinfo7, .historyinfo8, .historyinfo9{
     padding-top: 2px;
     display: flex;
     justify-content: center;
@@ -123,7 +123,7 @@ body{
     padding: 20px;
 }
 
-.button, .button2, .button3, .button4, .button5, .button6 {
+.button, .button2, .button3, .button4, .button5, .button6, .button7, .button8 {
     display: flex;
     justify-content: center;
     border: none;
@@ -141,7 +141,7 @@ body{
     transition: all 0.2s ease-in-out;
 }
 
-.button:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover {
+.button:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover, .button7:hover, .button8:hover {
     display: flex;
     justify-content: center;
     border: none;
