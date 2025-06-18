@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who am i?</title>
-<link rel="stylesheet" href="main.css">
+    <title>Mal1koRe1ss</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
-<body style="background-color: #1c0330;">
-    <script src="lang.js"></script>
-    <script src="script.js"></script>
-    <div class="Selector">
-    <select id="languageSelect" class="LanguageSelect">
-        <option value="tr">Türkçe</option>
-        <option value="en">English</option>
-      </select>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay"></div>
+
+    <!-- Animated background particles -->
+    <div class="bg-particles"></div>
+
+    <!-- Main content container -->
+    <div class="main-container loading" id="mainContainer">
+
+        <!-- Profile picture -->
+        <div class="profile-container">
+            <img id="profilePic" src="" alt="Profile" class="profile-pic">
+        </div>
+
+        <!-- Name -->
+        <h1 class="name-title">Mal1koRe1ss</h1>
+
+        <!-- Button container -->
+        <div class="button-container">
+            <a href="aboutme.html" class="icon-button" title="About Me">
+                <i class="ri-user-line"></i>
+            </a>
+            <a href="contact.html" class="icon-button" title="Contact">
+                <i class="ri-mail-line"></i>
+            </a>
+            <a href="projects.html" class="icon-button" title="Projects">
+                <i class="ri-code-line"></i>
+            </a>
+            <a href="social.html" class="icon-button" title="Social">
+                <i class="ri-links-line"></i>
+            </a>
+        </div>
     </div>
     
-    <div>
-
-    <div class="mainT" data-lang="mainT" >Hi I'm Mal1koRe1ss</div>
-    <h1 class="index" data-lang="index">I play video games for fun. Personal info and Contact is below.</h1>
-
-
-    <div class="buttonBox">
-        <a href="aboutme.html" class="button" data-lang="pinfobutton"><i class="ri-global-line"></i>Press me for Personal Info.</a>
-        <a href="contact.html" class="button" data-lang="contactbutton"><i class="ri-global-line"></i>Press me for Contact.</a>
-    </div>
-</body> 
+    <script src="pfp.js"></script>
+    <script src="particle.js"></script>
+</body>
 </html>

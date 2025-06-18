@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-<link rel="stylesheet" href="main.css">
-<script src="lang.js"></script>
+    <title>Contact | Mal1koRe1ss</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
 <body>
-    <select id="languageSelect" class="LanguageSelect">
-        <option value="en" data-lang="enx">English</option>
-        <option value="tr" data-lang="trx">Türkçe</option>
-      </select>
-    <div class="mainT" data-lang="mainT">Hi I'm Mal1koRe1ss</div>
-    <h1 class="index" data-lang="index">I play video games for fun. You can see my Personal Info below.</h1>
-    <div class="buttons">
-        <a href="https://discord.com/users/1020731689330286694" class="button"><i class="ri-discord-fill"></i> Discord</a>
-        <a href="https://discord.gg/VEq5z7R4rv" class="button2"><i class="ri-discord-fill"></i> Crack's World</a>
-        <a href="https://discord.gg/E9YYgg53" class="button3"><i class="ri-discord-fill"></i> NostalgiaFun</a>
-        <a href="https://www.youtube.com/@mal1kore1ss" class="button4"><i class="ri-youtube-fill"></i> Youtube</a>
-        <a href="https://open.spotify.com/user/315iv7eqtwnumnr7iktnxnt4xpma" class="button5"><i class="ri-spotify-fill"></i> Spotify</a>
-        <a href="https://steamcommunity.com/id/mal1kore1ss/" class="button6"><i class="ri-steam-fill"></i> Steam</a>
-        <a href="https://www.instagram.com/mal1kore1ss" class="button7"><i class="ri-instagram-fill"></i> Instagram</a>
-        <a href="https://github.com/Mal1koRe1ss" class="button8"><i class="ri-github-fill"></i> Github</a>
+    <div class="loading-overlay"></div>
+    <div class="bg-particles"></div>
+
+    <div class="main-container loaded" id="mainContainer">
+
+        <div class="back-button">
+            <a href="index.html" title="Back to Home">
+                <i class="ri-arrow-left-line"></i>
+            </a>
+        </div>
+        
+        <div class="content-container">
+            <h1>Contact</h1>
+            <div class="content-card">
+                <p>Feel free to reach out for collaborations or inquiries:</p>
+                <div class="contact-methods">
+                    <a href="mailto:mal1kore1ss@proton.me" class="contact-item">
+                        <i class="ri-mail-line"></i> mal1kore1ss@proton.me
+                    </a>
+                    <a href="https://discord.com/users/1020731689330286694" class="contact-item">
+                        <i class="ri-discord-line"></i> mal1kore1s
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="buttons2">
-        <a href="aboutme.html" class="button" data-lang="pinfobutton"><i class="ri-global-line"></i>Press me for Personal Info.</a>
-        <a href="index.html" class="button" data-lang="mainbutton"><i class="ri-global-line"></i>Press me for Main Page.</a>
-    </div>
-</body> 
+
+    <script src="particle.js"></script>
+</body>
 </html>
