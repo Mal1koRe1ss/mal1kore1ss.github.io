@@ -1,48 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mal1koRe1ss</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>mal1kore1ss(1)</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://cdn.jsdelivr.net/npm/@fontsource/iosevka@5/files/iosevka-latin-400-normal.woff2">
+<style>
+@font-face {
+  font-family: 'Iosevka Web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Iosevka'), url('https://cdn.jsdelivr.net/npm/@fontsource/iosevka@5/files/iosevka-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Iosevka Web';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Iosevka Bold'), url('https://cdn.jsdelivr.net/npm/@fontsource/iosevka@5/files/iosevka-latin-700-normal.woff2') format('woff2');
+}
+:root {
+  --bg: #080808;
+  --fg: #c8c8c8;
+  --dim: #6e6e6e;
+  --rule: #262626;
+  --accent: #00ff00;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Iosevka Web', 'Iosevka', ui-monospace, monospace;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  max-width: 82ch;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  overflow-wrap: break-word;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+a:hover, a:focus-visible {
+  background: var(--accent);
+  color: var(--bg);
+  outline: none;
+}
+::selection { background: var(--accent); color: var(--bg); }
+
+.top, .bot {
+  display: flex;
+  justify-content: space-between;
+  gap: 1ch;
+  color: var(--dim);
+}
+.top { margin-bottom: 2rem; }
+.top span:nth-child(2) { text-align: center; flex: 1; }
+.bot { margin-top: 3rem; }
+
+h1, h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+h1 { color: #fff; font-size: 1.15rem; }
+h2 { color: #fff; margin: 2.25rem 0 .5rem; }
+h2::before { content: " "; color: var(--accent); }
+.sec { padding-left: 4ch; }
+.sec p + p, .sec p + ul, .sec ul + p, .item + .item { margin-top: .75rem; }
+
+.prompt { color: #fff; font-weight: 700; }
+.prompt::before { content: ""; color: var(--dim); }
+.dim { color: var(--dim); }
+b, strong { color: #fff; font-weight: 700; }
+
+ul { list-style: none; }
+ul li::before { content: "- "; color: var(--dim); }
+
+.item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+.item h3 .tag { color: var(--dim); font-weight: 400; }
+.item p, .item ul { padding-left: 4ch; }
+.item ul li { text-indent: -2ch; padding-left: 2ch; }
+
+dl { display: grid; grid-template-columns: 12ch 1fr; gap: .15rem 2ch; }
+dt { color: var(--dim); }
+dd { min-width: 0; }
+
+pre {
+  font: inherit;
+  white-space: pre-wrap;
+  color: var(--dim);
+  border-left: 2px solid var(--rule);
+  padding-left: 2ch;
+  margin-top: .75rem;
+}
+
+footer {
+  margin-top: 3rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+}
+blockquote { color: #fff; }
+blockquote cite { display: block; color: var(--dim); font-style: normal; margin-top: .25rem; }
+
+@media (max-width: 560px) {
+  html { font-size: 15px; }
+  body { padding: 1rem .9rem 2rem; }
+  .top span:nth-child(3) { display: none; }
+  .top span:nth-child(2) { text-align: right; }
+  .sec { padding-left: 0; }
+  .item p, .item ul { padding-left: 2ch; }
+  dl { grid-template-columns: 1fr; gap: 0; }
+  dd { margin-bottom: .5rem; padding-left: 2ch; }
+}
+@media print {
+  html { background: #fff; color: #000; }
+  a { color: #000; border-color: #000; }
+}
+</style>
 </head>
 <body>
-    <!-- Loading overlay -->
-    <div class="loading-overlay"></div>
 
-    <!-- Animated background particles -->
-    <div class="bg-particles"></div>
+<header>
+  <div class="top" aria-hidden="true">
+    <span>mal1kore1ss(1)</span>
+    <span>CV Manual</span>
+    <span>mal1kore1ss(1)</span>
+  </div>
 
-    <!-- Main content container -->
-    <div class="main-container loading" id="mainContainer">
+  <h2 style="margin-top:0">Name</h2>
+  <div class="sec">
+    <h1>mal1kore1ss</h1>
+    <p>15, system programmer, TR.</p>
+  </div>
 
-        <!-- Profile picture -->
-        <div class="profile-container">
-            <img id="profilePic" src="" alt="Profile" class="profile-pic">
-        </div>
+  <h2>Synopsis</h2>
+  <div class="sec">
+    <p><span class="prompt">man mal1kore1ss</span></p>
+  </div>
 
-        <!-- Name -->
-        <h1 class="name-title">Mal1koRe1ss</h1>
+  <h2>Description</h2>
+  <div class="sec">
+    <p>Building open-source that enlightens, rather than obfuscates.</p>
+    <p class="dim">Low-level. Minimal. Readable. Software should be understood by the person who runs and reads it.</p>
+  </div>
+</header>
 
-        <!-- Button container -->
-        <div class="button-container">
-            <a href="aboutme.html" class="icon-button" title="About Me">
-                <i class="ri-user-line"></i>
-            </a>
-            <a href="contact.html" class="icon-button" title="Contact">
-                <i class="ri-mail-line"></i>
-            </a>
-            <a href="projects.html" class="icon-button" title="Projects">
-                <i class="ri-code-line"></i>
-            </a>
-            <a href="social.html" class="icon-button" title="Social">
-                <i class="ri-links-line"></i>
-            </a>
-        </div>
-    </div>
-    
-    <script src="pfp.js"></script>
-    <script src="particle.js"></script>
+<main>
+  <h2>Projects</h2>
+  <div class="sec">
+    <section class="item">
+      <h3>@trycatchnet <span class="tag">[org]</span></h3>
+      <p>Low-level programming and cybersecurity. Building software that bridges the gap between developers and end-users.</p>
+    </section>
+
+    <section class="item">
+      <h3>@lowersoft <span class="tag">[org]</span></h3>
+      <p>Privacy is a birthright, not a setting. Building low-level tools with zero bloat and no black boxes.</p>
+    </section>
+
+    <section class="item">
+      <h3>socket <span class="tag">[edu]</span></h3>
+      <p>Network programming from scratch. Co-developed with <b>@p0unter</b>. A deep dive into P2P protocols, sockets, and NAT traversal.</p>
+      <ul>
+        <li><b>p2p/stun</b> - STUN client & server, NAT type detection, UDP hole punching.</li>
+        <li><b>p2p/lib</b> - Modular C library with custom crypto, packet parsing, and networking.</li>
+        <li><b>tests</b> - Automated test runner & binary corpus for STUN message validation.</li>
+        <li><b>core</b> - Core implementations of HTTP, FTP, proxy, chat, and broadcast.</li>
+      </ul>
+    </section>
+
+    <section class="item">
+      <h3>lowerweb <span class="tag">[lib]</span></h3>
+      <p>Minimalist web framework. Co-developed with <b>@p0unter</b>. Stripping away the bloat to understand HTTP at its core.</p>
+    </section>
+
+    <section class="item">
+      <h3>mrshell <span class="tag">[lab]</span></h3>
+      <p>Experimental shell. Learning how processes are forked, executed, and managed under the hood.</p>
+    </section>
+
+    <section class="item">
+      <h3>gl_studies <span class="tag">[edu]</span></h3>
+      <p>Graphics programming studies. Exploring the OpenGL rendering pipeline and graphics fundamentals.</p>
+    </section>
+  </div>
+
+  <h2>Tech Stack</h2>
+  <div class="sec">
+    <dl>
+      <dt>languages</dt><dd>C, C++, Java</dd>
+      <dt>systems</dt><dd>Linux</dd>
+      <dt>tools</dt><dd>Vim, Git</dd>
+    </dl>
+  </div>
+
+  <h2>Contact</h2>
+  <div class="sec">
+    <dl>
+      <dt>email</dt><dd><a href="mailto:mal1kore1ss@proton.me">mal1kore1ss@proton.me</a></dd>
+      <dt>github</dt><dd><a href="https://github.com/Mal1koRe1ss" rel="me noopener">github.com/Mal1koRe1ss</a></dd>
+      <dt>discord</dt><dd><a href="https://discord.com/users/1020731689330286694" rel="me noopener">mal1kore1s</a></dd>
+    </dl>
+  </div>
+</main>
+
+<footer>
+  <blockquote>
+    "An idiot admires complexity, a genius admires simplicity."
+    <cite>- Terry A. Davis</cite>
+  </blockquote>
+  <div class="bot" aria-hidden="true">
+    <span>mal1kore1ss.github.io</span>
+    <span>(END)</span>
+  </div>
+</footer>
+
 </body>
 </html>
